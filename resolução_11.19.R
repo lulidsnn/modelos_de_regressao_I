@@ -22,6 +22,7 @@ X1234
 mA = lm(d$y ~ X1234) # modelo de regressão com a matriz
 anova(mA) # anova fornecida vai ter os valores 'compressados'
 valor_p = 0.0303 #retirado da anova
+summary(mA)
 
 # teste para dizer se a regressão é ou não significativa
 f_sign <- function(alpha, p_valor){
