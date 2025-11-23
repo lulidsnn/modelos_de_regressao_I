@@ -24,10 +24,10 @@ inter_conf_coef <- function(alpha, coef, erro_p, n, p){
   print(limites)
 }
 
-b1 <- inter_conf_coef(0.05, 0.60537, 0.36890, 12, 5)
-b2 <- inter_conf_coef(0.05, 8.92364, 5.30052, 12, 5)
-b3 <- inter_conf_coef(0.05, 1.43746, 2.39162, 12, 5)
-b4 <- inter_conf_coef(0.05, 0.01361, 0.73382, 12, 5)
+b1 <- inter_conf_coef(0.05, m$coef[2], 0.36890, 12, 5)
+b2 <- inter_conf_coef(0.05, m$coef[3], 5.30052, 12, 5)
+b3 <- inter_conf_coef(0.05, m$coef[4], 2.39162, 12, 5)
+b4 <- inter_conf_coef(0.05, m$coef[5], 0.73382, 12, 5)
 
 confint(m)
 
